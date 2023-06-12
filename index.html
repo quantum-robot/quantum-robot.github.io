@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Quantum-robot: Quantum-Like Perception Modeling in Python</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<meta property="og:image" content="http://quantum-robot.org/images/logo.png" />
+	<meta property="og:title" content="Quantum-robot: Quantum-Like Perception Modeling in Python" />
+	<meta property="og:description" content="Quantum-robot is a Python package for quantum-like perception modeling for robotics. 
+											The package exploits the Qiksit framework, implementing the models on quantum circuits 
+											that can be simulated on a classical computer or sent to a quantum backend (service 
+											provided by IBM Quantum Experience)." />
+	<!--===============================================================================================-->
+	<link rel="icon" type="image/svg" href="images/logo.svg" />
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
+</head>
+
+<body>
+
+
+	<div class="size1 bg0 where1-parent">
+		<!-- Right -->
+		<div class="flex-c-m bg-img1 size2 where1 overlay1 where2 respon2"
+			style="background-image: url('images/qbrain.svg');">
+			<div class="wsize2 flex-w flex-c-m cd100 js-tilt">
+				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
+					<!--span class="l2-txt1 p-b-9 days">35</span>
+					<span class="s2-txt4">Days</span-->
+					<span class="l2-txt1 p-b-9">
+						<a href="http://docs.quantum-robot.org/en/latest/" style="color:#ffffffcc">
+							<i class="fa fa-file-text-o"></i>
+						</a>
+					</span>
+					<span class="s2-txt4">Docs</span-->
+				</div>
+
+				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
+					<span class="l2-txt1 p-b-9">
+						<a href="http://github.com/Davidelanz/quantum-robot" style="color:#ffffffcc">
+							<i class="fa fa-github"></i>
+						</a>
+					</span>
+					<span class="s2-txt4">Repo</span-->
+				</div>
+
+				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
+					<span class="l2-txt1 p-b-9">
+						<a href="https://pypi.org/project/quantum-robot/">
+							<i class="fa fa-code fa-pypi"></i>
+						</a>
+					</span>
+					<span class="s2-txt4">PyPi</span>
+				</div>
+
+				<div class="flex-col-c-m size6 bor2 m-l-10 m-r-10 m-t-15">
+					<span class="l2-txt1 p-b-9">
+						<a href="http://docs.quantum-robot.org/en/latest/about/about.html#references" style="color:#ffffffcc">
+							<i class="fa fa-search"></i>
+						</a>
+					</span>
+					<span class="s2-txt4">Refs</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Left -->
+		<div class="size3 flex-col-sb flex-w p-l-75 p-r-75 p-t-45 p-b-25 respon1">
+			<div class="wrap-pic1">
+				<a href="http://quantum-robot.org">
+					<img src="images/logo.svg" alt="LOGO">
+				</a>
+			</div>
+
+			<div class="p-t-30 p-b-60">
+				<p class="m1-txt1 p-t-20 p-b-36">
+					The <span class="m1-txt2">quantum-robot</span> Python package is under development.
+				</p>
+
+				<p class="s2-txt3 p-t-18 p-b-36">
+					Check the latest updates on <a href="https://github.com/Davidelanz/quantum-robot">GitHub.
+						<br>
+						Partial <a href="http://docs.quantum-robot.org/en/latest/">documentation</a>
+						available.
+				</p>
+
+				<p class="s2-txt3 p-t-18 p-b-9">
+					<div align="center" style="align:center; padding:20px; line-height:2;">
+                        <a href="https://github.com/Davidelanz/quantum-robot/actions/workflows/package-check.yml">
+                            <img src="https://github.com/Davidelanz/quantum-robot/actions/workflows/package-check.yml/badge.svg?branch=master">
+                        </a>
+                        <a href="https://codecov.io/gh/Davidelanz/quantum-robot">
+                            <img src="https://codecov.io/gh/Davidelanz/quantum-robot/branch/master/graph/badge.svg?token=69IQEINMQU" alt="Code coverage">
+                        </a>
+                        <a href="http://docs.quantum-robot.org/en/latest/?badge=latest">
+                            <img src="https://readthedocs.org/projects/quantum-robot/badge/?version=latest" alt="Documentation Status">
+                        </a>
+                        <a href="https://github.com/Davidelanz/quantum-robot/actions/workflows/codeql-analysis.yml">
+                            <img src="https://github.com/Davidelanz/quantum-robot/actions/workflows/codeql-analysis.yml/badge.svg?branch=master" alt="CodeQL">
+                        </a>
+                        <a href="https://frontend.code-inspector.com/public/project/13599/quantum-robot/dashboard">
+                            <img src="https://api.codiga.io/project/13599/score/svg" alt="Code Quality">
+                        </a>
+                        <a href="https://codeclimate.com/github/Davidelanz/quantum-robot/maintainability">
+                            <img src="https://api.codeclimate.com/v1/badges/498a54bb981af54decec/maintainability" alt="Maintainability">
+                        </a>
+                        <a href="https://snyk.io/advisor/python/quantum-robot">
+                            <img src="https://snyk.io/advisor/python/quantum-robot/badge.svg" alt="snyk">
+                        </a>
+                        <a href="https://github.com/Davidelanz/quantum-robot/blob/master/LICENSE">
+                            <img src="https://img.shields.io/badge/license-GNU_GPL_v3-blue" alt="License">
+                        </a>
+                        <a href="https://zenodo.org/badge/latestdoi/274185290">
+                            <img src="https://zenodo.org/badge/274185290.svg" alt="DOI">
+                        </a>
+                    </div>
+				</p>
+			</div>
+
+			<div class="flex-w">
+				<a href="http://github.com/Davidelanz/quantum-robot" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
+					<i class="fa fa-github"></i>
+				</a>
+				<a href="mailto:info@quantum-robot.org" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
+					<i class="fa fa-envelope-o"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/lanzadavide/" class="flex-c-m size5 bg3 how1 trans-04 m-r-5">
+					<i class="fa fa-linkedin"></i>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/countdowntime/moment.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
+	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 2020,
+			endtimeMonth: 08,
+			endtimeDate: 28,
+			endtimeHours: 0,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: ""
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+	<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script>
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
