@@ -76,12 +76,12 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-search::before { content: "\f002"; }
 .icon-email::before { content: "\f003"; }
 .icon-github::before { content: "\f09b"; }
 .icon-document::before { content: "\f0f6"; }
 .icon-linkedin::before { content: "\f0e1"; }
 .icon-code::before { content: "\f121"; }
+.icon-graduation-cap::before { content: "\f19d"; }
 
 .icon-pypi {
   background-image: url("../images/python.svg");
